@@ -1,0 +1,213 @@
+@charset "UTF-8";
+/* reset */
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+    background-color: #FFEFD5;
+}
+
+/*Swiper-css*/
+@media screen and (min-width: 575px){
+    .swiper {
+        height: 40vw;
+        max-height: 600px; /* 最大の高さ */
+        min-height: 400px; /* 最小の高さ */
+    }
+}
+
+.swiper {
+    aspect-ratio: 1 / 1;
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center; /* 左右の中央揃え */
+  }
+  .swiper-slide img {
+    align-self: center; /* 上下の中央揃え */
+    height: 100%;
+    width: 100%;
+  }   
+
+/* プログレスバーの位置を下に移動 */
+.swiper-horizontal > .swiper-pagination-progressbar,
+.swiper-pagination-progressbar.swiper-pagination-horizontal {
+  bottom: 0;
+  top: auto;
+}
+
+/*コロナウィルス注意喚起-css*/
+#nav-menu {
+    display: block;
+    justify-content: center;
+    margin: 0px 12% 5% 12%;
+}
+
+.menu-item-btn{
+	padding: 15px;
+	font-size: 20px;
+	background: #FFC7AF;
+	position: relative;
+}
+
+.menu-ul {
+    display: none;
+}
+
+.menu-ul-css {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-ul li {
+    list-style: none;
+    margin: 5px auto 20px 0px;
+}
+
+.menu-ul li::before {
+    content: "・";
+}
+
+/*section-css*/
+
+.section-item {
+    display: flex;
+    padding: 8% 10% 0 10%;
+}
+
+.section-img {
+    width: 100%;
+}
+
+.section-img img {
+    width: 100%;
+}
+
+.section-img h2 {
+    padding: 2%;
+}
+
+.section-p {
+    width: 100%;
+} 
+
+.section-p p {
+    font-size: large;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+/*about-css*/
+
+.about-add {
+    display: flex;
+    color: white;
+    background-color: black;
+}
+
+.about-img {
+    width: 100%;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+/*shop-css*/
+#shop {
+    display: block;
+}
+
+.shop-h3 {
+    text-align: center;
+}
+
+.shop-item {
+    display: flex;
+}
+
+.shop_itembox {
+    display: flex;
+    flex-direction: column; 
+}
+
+.shop_img {
+    width: 100%;
+    height: 100%;
+}
+
+.shop_img img {
+    width: 80%;
+    margin: auto;
+    aspect-ratio: 1 / 1; /*アスペクト比の設定*/
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.shop_address {
+    display: flex;
+    font-size:smaller;
+    justify-content: center;
+}
+.shop_address svg{
+    align-self: center;
+}
+
+/*footer-css*/
+.footer {
+    text-align: center;
+    color: black;
+    background-color: darkgray;
+    padding: 2% 2% 4% 2%;
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+    font-size: small;
+}
+
+
+/*fade-in*/
+.js-fade {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px);
+    transition: opacity 1s,visibility 1s, transform 1s;
+}
+
+.scroll {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
