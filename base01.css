@@ -37,6 +37,13 @@ body {
     background-color: #FFEFD5;
 }
 
+/*navber-css*/
+
+#navber_title{
+    background-color: lightgray; 
+    align-items: stretch;
+}
+
 /*Swiper-css*/
 @media screen and (min-width: 575px){
     .swiper {
@@ -181,6 +188,12 @@ body {
 }
 .shop_address svg{
     align-self: center;
+}
+
+.svg_css{
+    width: 1em;
+    height: 1em;
+    fill: currentColor; 
 }
 
 /*footer-css*/
